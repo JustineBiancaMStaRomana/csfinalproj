@@ -4,7 +4,9 @@ body{
 	color:#fff;
 	padding:0px;
 	margin:0px;
-	min-height:100vh;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 a{
 	text-decoration:none;
@@ -26,7 +28,7 @@ header h1{
 	width: 400px;
 	margin:20px;
 }
-logo{
+#logo{
 	padding:0px;
 }
 input.rightalign{
@@ -53,6 +55,6 @@ footer{
 	padding: 40px;
 	text-align:center;
 	background-color: #1b1b1b;
-	margin-top: 50px;
+	margin-top: auto;
 }
 /*jbsrizkewl*/

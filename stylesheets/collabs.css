@@ -8,8 +8,23 @@
 .flex{
 	display: flex;
 	justify-content:center;
+	align-items: center;
 }
-.imgs{
-	margin:20px;
-	
+.deped{
+	background: url('../imgs/collabsprites.png') no-repeat -10px -10px;
+	width: 800px;
+	height: 408px;
+	margin: 30px;
+}
+.kacad{
+	background: url('../imgs/collabsprites.png') no-repeat -10px -438px;
+	width: 225px;
+	height: 225px;
+	margin: 30px;
+}
+.ltexts{
+	background: url('../imgs/collabsprites.png') no-repeat -255px -438px;
+	width: 225px;
+	height: 225px;
+	margin: 30px;
 }
