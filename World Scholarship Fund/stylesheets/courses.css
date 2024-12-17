@@ -1,7 +1,0 @@
-div:first-of-type{
-	display: flex;
-	justify-content:center;
-	flex-direction:column;
-}
-
-main{ background-origin: padding-box;}
