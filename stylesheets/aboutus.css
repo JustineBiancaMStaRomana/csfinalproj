@@ -1,13 +1,10 @@
+/*TEXT*/
 .aboutus{
-	margin:40px;
-}
-.one{
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size:40px;
-	line-height:0.8;
 	margin:40px;
 }
 .main{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size:20px;
+	width: 80%;
 }
+/*close*/

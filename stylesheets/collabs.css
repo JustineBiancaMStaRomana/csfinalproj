@@ -1,30 +1,32 @@
-.one{
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size:40px;
-	line-height:0.8;
-	margin:40px;
-	text-align:center;
-}
-.flex{
+/*ACTUAL CONTENT*/
+#flex{
 	display: flex;
 	justify-content:center;
 	align-items: center;
 }
-.deped{
-	background: url('../imgs/collabsprites.png') no-repeat -10px -10px;
-	width: 800px;
-	height: 408px;
-	margin: 30px;
+.rbplay {
+	background: url('../imgs/rbanimfix.png') no-repeat 0px 0px;
+	width: 400px;
+	height: 400px;
+	transform: scale(0.6);
+	animation: rbanim 1s steps(7) infinite;
+}
+@keyframes rbanim {
+	from{background-position-x:0px;}
+	to{background-position-x:-2800px;}
 }
 .kacad{
-	background: url('../imgs/collabsprites.png') no-repeat -10px -438px;
+	background: url('../imgs/css_sprites.png') no-repeat -10px -286px;
 	width: 225px;
 	height: 225px;
-	margin: 30px;
 }
 .ltexts{
-	background: url('../imgs/collabsprites.png') no-repeat -255px -438px;
+	background: url('../imgs/css_sprites.png') no-repeat -286px -10px;
 	width: 225px;
 	height: 225px;
-	margin: 30px;
 }
+
+article div{
+	margin: 20px;
+}
+/*close*/
