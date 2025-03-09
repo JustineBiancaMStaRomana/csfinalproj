@@ -1,9 +1,8 @@
-/*START NOW SPIEL*/
-#grid{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	margin:25px;
+#grid {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin:25px;
 }
 #indeximg1{
 	max-width:500px;
@@ -12,6 +11,8 @@
 	margin:20px;
 	object-fit:cover;
 }
+
+/*txt*/
 p[id*="text"]{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	width:500px;
@@ -24,6 +25,9 @@ p[id*="text"]{
 	width:500px;
 	font-size:20px;
 }
+/*txt done*/
+
+/*button*/
 #startnow{
 	margin:60px;
 	background-color:#0088d0;
@@ -39,9 +43,9 @@ p[id*="text"]{
 	background-color:#015582;
 	transform: scale(1.1);
 }
-/*close*/
+/*button done*/
 
-/*INTRO VID*/
+/*vid*/
 #introvid{
 	align-self: center;
 	margin: 5em;
@@ -51,5 +55,4 @@ p[id*="text"]{
 	  display: none;
 	}
   }
-/*close*/
-/*jbsriskewl*/
+/*vid done*/
