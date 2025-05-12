@@ -2,49 +2,54 @@
 <html>
 <head>
     <title>World Scholarship Fund</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/wsfstylesheet.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
-<body>
+<body onwheel="buttonAppear()">
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <header>
-        <a href="index.html"><img id="logo" src="imgs/logo.png" width="80px" height="80px"></a>
-		<h1>World Scholarship Fund</h1>
-        <input class="rightalign" type="text" placeholder="Search Resources">
+    <header class="wrapperHead">
+        <span onclick="openNav()">&#9776</span>
+
+        <div style="display:flex; align-items:center;">
+            <a href="index.html" style="padding: 0 2em;"><img id="logo" src="pics/logo.png" width="80px" height="80px"></a>
+            <a href="index.html" style="padding: 0; color: white;"><h1 class="headText" style="cursor: pointer;">World Scholarship Fund</h1></a>
+        </div>
+
+        <h3 class="headText register"><a class="register" href="register.html">Register</a></h3>
     </header>
 	
-    <nav>
-        <a href="aboutus.html">About Us</a>
-        <a href="collabs.html">Collaborators</a>
-        <a href="courses.html">Courses</a>
-		<div class="rightalign">
-			<a href="donate.html">Donate</a>
-		</div>
+    <nav id="sideNav">
+        <a onclick="closeNav()" style="cursor: pointer; text-align: right; float: right; font-size: 2em; color: white;">&times;</a>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="collabs.html">Collaborators</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
     </nav>
+
+    <a id="uppies" onclick="toTop(); buttonDisappear()"> To Top &uArr;</a>
 	<!--close-->
 
-    <section id="grid">
-		<img id="indeximg1" src="imgs/learning.jpg">
-		<div>
-			<p id="text">Education for All <br><span id="text2">This is a non-profit for bringing education to the world through donations and free online courses</span></p>
-            <div id="startnow">
-			    <a href="courses.html">Start Now</a>
-            </div>
-		</div>
+    <section>
+        <img id="img1" src="pics/learning.jpg">
+        <div id="startNow">
+            <p class="bodyText" style="max-width: 80%;"><span>Education for All</span><br><br>WSF is a non-profit for bringing education to the world through donations and free online courses designed by experienced educators and experts in different fields. Educate yourself with our free library of books, videos, and quizzes updated regularly to provide the best quality education for all.</p>
+            <a href="courses.html" id="courseStart">Start Now</a>
+        </div>
     </section>
 
     <!--change this to Introduction video-->
-    <article id="introvid">
-        <iframe src="https://drive.google.com/file/d/1V8yZ0LkWyIHt-1ziNlju3qCS3FWZo6qp/preview" width="640" height="400" allow="autoplay"></iframe>
+    <article>
+        <p>Our Story</p>
+
+        <iframe src="https://drive.google.com/file/d/1V8yZ0LkWyIHt-1ziNlju3qCS3FWZo6qp/preview" width="640" height="480" allow="autoplay"></iframe>
     </article>
 	<!--close-->
 
-    <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <footer>
-        <p>JBSR Foundation</p>
-    </footer>
-    <!--close-->
+    <br><bR>
 </body>
+<script src="scripts/main.js"></script>
 </html>
 
 <!--jbsrizkewl-->

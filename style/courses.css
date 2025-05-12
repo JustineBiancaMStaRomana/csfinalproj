@@ -1,0 +1,53 @@
+.flex{
+	display: flex;
+	flex-direction:column;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.listLabel{
+    font-size: xx-large;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+
+  border: solid #183B4E;
+  border-radius: 10px;
+}
+
+.scrollmenu aside {
+  display: inline-block;
+  text-align: center;
+  padding: 1.5em;
+  text-decoration: none;
+}
+
+.vids{
+    width: 350px;
+}
+.covers{
+    width: 160px;
+}
+
+.sdg{
+	margin:40px;
+	background-color:#27548A;
+	border-radius: 10px;
+	padding:30px 10px;
+	width: fit-content;
+	transform: scale(1);
+	transition-property: transform, background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+.sdg:hover{
+	background-color:#183B4E;
+	transform: scale(1.1);
+}
+
+.sdglink{
+  color: white;
+  font-size: 1.5em;
+}

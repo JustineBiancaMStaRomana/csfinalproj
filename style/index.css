@@ -1,0 +1,55 @@
+#img1{
+	max-width:500px;
+	width:100%;
+	height:500px;
+	margin:20px;
+	object-fit:cover;
+
+    flex-grow: 1;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+#startNow{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: left;
+
+    flex-grow: 1;
+
+    margin-left:2em ;
+}
+
+#courseStart{
+    max-width: fit-content;
+    color: white;
+	background-color:#27548A;
+	border-radius: 10px;
+	padding:10px;
+	width: fit-content;
+	transform: scale(1);
+	transition-property: transform, background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#courseStart:hover{
+    background-color:#183B4E;
+	transform: scale(1.2);
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    & > p{
+        font-size: 2em;
+    }
+}

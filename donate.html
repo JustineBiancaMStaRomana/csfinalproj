@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Donate</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/wsfstylesheet.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/donate.css">
+    <title>World Scholarship Fund</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/donate.css">
 </head>
-<body>
+<body onwheel="buttonAppear()">
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <header>
-        <a href="index.html"><img id="logo" src="imgs/logo.png" width="80px" height="80px"></a>
-		<h1>World Scholarship Fund</h1>
-        <input class="rightalign" type="text" placeholder="Search Resources">
+    <header class="wrapperHead">
+        <span onclick="openNav()">&#9776</span>
+
+        <div style="display:flex; align-items:center;">
+            <a href="index.html" style="padding: 0 2em;"><img id="logo" src="pics/logo.png" width="80px" height="80px"></a>
+            <a href="index.html" style="padding: 0; color: white;"><h1 class="headText" style="cursor: pointer;">World Scholarship Fund</h1></a>
+        </div>
+
+        <h3 class="headText register"><a class="register" href="register.html">Register</a></h3>
     </header>
 	
-    <nav>
-        <a href="aboutus.html">About Us</a>
-        <a href="collabs.html">Collaborators</a>
-        <a href="courses.html">Courses</a>
-		<div class="rightalign">
-			<a href="donate.html">Donate</a>
-		</div>
+    <nav id="sideNav">
+        <a onclick="closeNav()" style="cursor: pointer; text-align: right; float: right; font-size: 2em; color: white;">&times;</a>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="collabs.html">Collaborators</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
     </nav>
+
+    <a id="uppies" onclick="toTop(); buttonDisappear()"> To Top &uArr;</a>
 	<!--close-->
-	
-	<h1 class="headTxt">Help The Cause</h1>
-	
-	<p class="mainTxt">Anything you can spare helps this fund a lot. You can donate and help others in their own journey in education.</p>
-	<div class="flex">
-		<label class="donate" for="other">Your Donation Here:<label>
-		<input type="number" id="other" name="other">
-		<a id="startnow" href="https://donate.khanacademy.org/give/419869/#!/donation/checkout?c_src2=Webapp.header">Submit Donation</a>
-	</div>
-	
-    <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <footer>
-        <p>JBSR Foundation</p>
-    </footer>
-    <!--close-->
+
 </body>
+<script src="scripts/main.js"></script>
 </html>
 
 <!--jbsrizkewl-->

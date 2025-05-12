@@ -1,55 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Courses</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/wsfstylesheet.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/courses.css">
+    <title>Courses and Resources</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/courses.css">
 </head>
-<body>
+<body onwheel="buttonAppear()">
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <header>
-        <a href="index.html"><img id="logo" src="imgs/logo.png" width="80px" height="80px"></a>
-		<h1>World Scholarship Fund</h1>
-        <input class="rightalign" type="text" placeholder="Search Resources">
+    <header class="wrapperHead">
+        <span onclick="openNav()">&#9776</span>
+
+        <div style="display:flex; align-items:center;">
+            <a href="index.html" style="padding: 0 2em;"><img id="logo" src="pics/logo.png" width="80px" height="80px"></a>
+            <a href="index.html" style="padding: 0; color: white;"><h1 class="headText" style="cursor: pointer;">World Scholarship Fund</h1></a>
+        </div>
+
+        <h3 class="headText register"><a class="register" href="register.html">Register</a></h3>
     </header>
 	
-    <nav>
-        <a href="aboutus.html">About Us</a>
-        <a href="collabs.html">Collaborators</a>
-        <a href="courses.html">Courses</a>
-		<div class="rightalign">
-			<a href="donate.html">Donate</a>
-		</div>
-    </nav>
-	<!--close-->
-	<main>
-        <section>
-            <h1 class="headTxt">Start Your Learning Journey</h1>
-        </section>
-        
-        <section class="flex">
+    <nav id="sideNav">
+        <a onclick="closeNav()" style="cursor: pointer; text-align: right; float: right; font-size: 2em; color: white;">&times;</a>
         <ul>
-            <li>Audiobooks</li>
-                <p>STEM: An industry by R. B. Plays</p>
-                <audio controls autoplay>
-                    <source src="multimed/placeholder.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            <li>Videos</li>
-            <li>Articles and Reading Material</li>
-            <li>Quizzes</li>
-                <div id="sdg">
-                    <a href="quiz/sdgquizq1.html">Learn About SDG 4</a>
-                </div>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="collabs.html">Collaborators</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="donate.html">Donate</a></li>
         </ul>
+    </nav>
+
+    <a id="uppies" onclick="toTop(); buttonDisappear()"> To Top &uArr;</a>
+	<!--close-->
+    <main>
+        <section>
+            <h1 class="headText">Start Your Learning Journey</h1>
         </section>
-	</main>
-    <!--THIS IS GOOD NA, DO NOT TOUCH-->
-    <footer>
-        <p>JBSR Foundation</p>
-    </footer>
-    <!--close-->
+
+        <section class="flex">
+            <table>
+                <tr>
+                    <h1 class="listLabel">Audiobooks</h1>
+                </tr>
+                <tr>
+                    <div class="scrollmenu">
+                        <aside>
+                            <p>STEM: An industry by R. B. Plays</p>
+                            <audio controls >
+                                <source src="multimed/placeholder.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </aside>
+                        
+                        <aside>
+                            <p>The Examination Hypothesis by H. Baguio</p>
+                            <audio controls >
+                                <source src="multimed/placeholder.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </aside>
+
+                        <aside>
+                            <p>From Charon to Christ: Death in Religion by Francesca Cruz</p>
+                            <audio controls >
+                                <source src="multimed/placeholder.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </aside>
+
+                        <aside>
+                            <p>Dark Pattern Searching by PH Sia</p>
+                            <audio controls >
+                                <source src="multimed/placeholder.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </aside>
+
+                        <aside>
+                            <p>Introduction to Turtle Biology by Somogod D.</p>
+                            <audio controls >
+                                <source src="multimed/placeholder.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </aside>
+
+                        <aside class="sdg"><a href="https://fmhy.net/audiopiracyguide" class="sdglink">&rArr;</a></aside>
+                    </div>
+                </tr>
+                <tr>
+                    <h1 class="listLabel">Videos</h1>
+                </tr>
+                <tr>
+                    <div class="scrollmenu">
+                        <aside>
+                            <a href="https://www.youtube.com/watch?v=knvv9SS8FIA"><img src="pics/snakes.png" class="vids">
+                            <p>5 Giant Snakes and the Evolution of Super-sized Serpents</p></a>
+                        </aside>
+                        
+                        <aside>
+                            <a href="https://www.youtube.com/watch?v=lcjdwSY2AzM"><img src="pics/einstein.png" class="vids">
+                            <p>The Woman Who Fixed Einstein's Mistake</p></a>
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.youtube.com/watch?v=D2iuUzkKu9k"><img src="pics/stock market.png" class="vids">
+                            <p>The 1929 Stock Market Crash - Black Thursday - Extra History</p></a>
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.youtube.com/watch?v=t6Wc7OMks4U"><img src="pics/art.png" class="vids">
+                            <p>Why We Study Art: Crash Course Art History #1</p></a>
+                        </aside>
+
+                        <aside class="sdg"><a href="https://www.youtube.com/" class="sdglink">&rArr;</a></aside>
+                    </div>
+                </tr>
+                <tr>
+                    <h1 class="listLabel">Articles and Reading Material</h1>
+                </tr>
+                <tr>
+                    <div class="scrollmenu">
+                        <aside>
+                            <p>STEM: An industry by R. B. Plays</p>
+                            <a href="https://gutenberg.org/"><img src="pics/cover1.jpg" class="covers"></a>
+                        </aside>
+                        
+                        <aside>
+                            <p>The Examination Hypothesis by H. Baguio</p>
+                            <a href="https://gutenberg.org/"><img src="pics/cover2.jpg" class="covers"></a>
+                        </aside>
+
+                        <aside>
+                            <p>From Charon to Christ: Death in Religion by Francesca Cruz</p>
+                            <a href="https://gutenberg.org/"><img src="pics/cover3.jpg" class="covers"></a>
+                        </aside>
+
+                        <aside>
+                            <p>Dark Pattern Searching by PH Sia</p>
+                            <a href="https://gutenberg.org/"><img src="pics/cover4.jpg" class="covers"></a>
+                        </aside>
+
+                        <aside>
+                            <p>Introduction to Turtle Biology by Somogod D.</p>
+                            <a href="https://gutenberg.org/"><img src="pics/cover2.jpg" class="covers"></a>
+                        </aside>
+
+                        <aside class="sdg"><a href="https://gutenberg.org/" class="sdglink">&rArr;</a></aside>
+                    </div>
+                </tr>
+                <tr>
+                    <h1 class="listLabel">Quizzes</h1>
+                </tr>
+                <tr>
+                    <div class="scrollmenu">
+                        <aside class="sdg">
+                            <a href="quiz.html" class="sdglink">Learn About SDG 4</a>
+                        </aside>
+
+                        <aside class="sdg">
+                            <a href="https://quizizz.com/join/quiz/635f8bf12ebf160023153251/start?studentShare=true" class="sdglink">Math: 6th Grade (with new question types)</a>
+                        </aside>
+
+                        <aside class="sdg">
+                            <a href="https://quizizz.com/join/presentation/6151787a04e4c7001dbd3159/start?studentShare=true" class="sdglink">Regions and Relative Location of Asia</a>
+                        </aside>
+
+                        <aside class="sdg">
+                            <a href="https://quizizz.com/join/presentation/61a61fa3f11a0e001d80a70a/start?studentShare=true" class="sdglink">Digestive System</a>
+                        </aside>
+
+                        <aside class="sdg"><a href="https://quizizz.com/join/dashboard" class="sdglink">&rArr;</a></aside>
+                    </div>
+                </tr>
+            </table>
+        </section>
+    </main>
+
 </body>
+<script src="scripts/main.js"></script>
 </html>
 
 <!--jbsrizkewl-->

@@ -1,0 +1,30 @@
+.flex{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.rbplay {
+	background: url('../pics/rbanimfix.png') no-repeat 0px 0px;
+	width: 400px;
+	height: 400px;
+	transform: scale(0.6);
+	animation: rbanim 1s steps(7) infinite;
+}
+@keyframes rbanim {
+	from{background-position-x:0px;}
+	to{background-position-x:-2800px;}
+}
+.kacad{
+	background: url('../pics/css_sprites.png') no-repeat -10px -286px;
+	width: 225px;
+	height: 225px;
+}
+.ltexts{
+	background: url('../pics/css_sprites.png') no-repeat -286px -10px;
+	width: 225px;
+	height: 225px;
+}
+
+article div{
+	margin: 20px;
+}
