@@ -3,6 +3,7 @@
 <head>
     <title>SDG Quiz</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/quiz.css">
 </head>
 <body>
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
@@ -27,10 +28,18 @@
         </ul>
     </nav>
 	<!--close-->
+    <div class="flex">
+    <h1 class="headText" id="question">There are 5 questions all about SDG 4. Can you answer all of them?</h1>
+    
+    <div id="option" class="flex"></div>
 
+    <h1 id="blurb" class="bodyText"></h1>
+    <input type="button" class="sdglink" value="Let's Go!" id="start" onclick="start()">
 
+    </div>
 </body>
 <script src="scripts/main.js"></script>
+<script src="scripts/quiz.js"></script>
 </html>
 
 <!--jbsrizkewl-->
