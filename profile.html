@@ -3,9 +3,9 @@
 <head>
     <title>World Scholarship Fund</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
-    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/register.css">
 </head>
-<body onwheel="buttonAppear()">
+<body onwheel="buttonAppear()" onload="infoLoad()">
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
     <header class="wrapperHead">
         <span onclick="openNav()">&#9776</span>
@@ -31,25 +31,20 @@
     <a id="uppies" onclick="toTop(); buttonDisappear()"> To Top &uArr;</a>
 	<!--close-->
 
-    <section>
-        <img id="img1" src="pics/learning.jpg">
-        <aside id="startNow">
-            <p class="bodyText" style="max-width: 80%;"><span>Education for All</span><br><br>WSF is a non-profit for bringing education to the world through donations and free online courses designed by experienced educators and experts in different fields. Educate yourself with our free library of books, videos, and quizzes updated regularly to provide the best quality education for all.</p>
-            <a href="courses.html" id="courseStart">Start Now</a>
-        </aside>
-    </section>
+    <main id="profile" class="flex">
+        <h1 class="headText">You're logged in</h1>
+        <p class="bodyText">Is this info right?</p>
 
-    <!--change this to Introduction video-->
-    <article>
-        <p>Our Story</p>
+        <p class="bodyText" id="name"></p>
+        <p class="bodyText" id="emailAdd"></p>
+        <p class="bodyText" id="sex"></p>
+        <p class="bodyText" id="whytho"></p>
+        
+    </main>
 
-        <iframe src="https://drive.google.com/file/d/1V8yZ0LkWyIHt-1ziNlju3qCS3FWZo6qp/preview" width="640" height="480" allow="autoplay"></iframe>
-    </article>
-	<!--close-->
-
-    <br><bR>
 </body>
 <script src="scripts/main.js"></script>
+<script src="scripts/register.js"></script>
 </html>
 
 <!--jbsrizkewl-->

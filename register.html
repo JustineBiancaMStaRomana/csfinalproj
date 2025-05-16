@@ -3,8 +3,9 @@
 <head>
     <title>Register Here</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/register.css">
 </head>
-<body>
+<body onwheel="buttonAppear()">
     <!--THIS IS GOOD NA, DO NOT TOUCH-->
     <header class="wrapperHead">
         <span onclick="openNav()">&#9776</span>
@@ -26,11 +27,56 @@
             <li><a href="donate.html">Donate</a></li>
         </ul>
     </nav>
+
+    <a id="uppies" onclick="toTop(); buttonDisappear()"> To Top &uArr;</a>
 	<!--close-->
 
+    <main class="flex">
+        <h1 class="headText">Register an Account</h1>
+        <p class="bodyText">Save your progress in quizzes and get access to our monthly newsletter </p>
+
+        <form onsubmit="return toSubmit();">
+            <label class="bodyText" for="fName">*First Name: <span class="bodyText required">Required</span> </label></br>
+            <input type="text" class="bodyText" id="fName" required></br></br>
+
+            <label class="bodyText" for="lName">*Last Name: <span class="bodyText required">Required</span> </label></br>
+            <input type="text" class="bodyText" id="lName" required></br></br>
+
+            <label class="bodyText">*Sex: <span class="bodyText" id="separate">Required</span> </label></br>
+            <div>
+                <label class="bodyText" for="male">Male: </label>
+                <input type="radio" class="bodyText" name="sex" value="male" id="male" required></br>
+
+                <label class="bodyText" for="female">Female: </label>
+                <input type="radio" class="bodyText" name="sex" value="female" id="female" required></br>
+
+                <label class="bodyText" for="prefernottosay">Prefer not to say: </label>
+                <input type="radio" class="bodyText" name="sex" value="Prefer Not To Say" id="prefernottosay" required></br></br>
+            </div>
+
+            <label class="bodyText" for="email">*Email Address: <span class="bodyText required">Required</span> </label></br>
+            <input type="text" class="bodyText" id="email" required></br></br>
+
+            <label class="bodyText" for="pass">*Password: <span class="bodyText required">Required</span> </label></br>
+            <input type="password" class="bodyText" id="pass" required></br></br>
+
+            <label class="bodyText" for="contact">Contact Number: </label></br>
+            <input type="text" class="bodyText" id="contact"></br></br>
+
+            <label class="bodyText" for="why">*Why Are You Joining? <span class="bodyText required">Required</span> </label></br>
+            <textarea class="bodyText" id="why" rows="4" cols="58" required></textarea></br></br>
+
+            <label class="bodyText" for="signUp">Share Progress Data? </label>
+            <input type="checkbox" class="bodyText" id="signUp"></br></br>
+
+            <input type="submit" class="courseStart bodyText" style="border: none;" onclick="requiredShow()">
+
+        </form>
+    </main>
 
 </body>
 <script src="scripts/main.js"></script>
+<script src="scripts/register.js"></script>
 </html>
 
 <!--jbsrizkewl-->

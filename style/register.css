@@ -1,0 +1,50 @@
+.flex{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+
+    margin-top: 2em;
+}
+
+.courseStart{
+    max-width: fit-content;
+    color: white;
+	background-color:#27548A;
+	border-radius: 10px;
+	padding:10px;
+	width: fit-content;
+	transform: scale(1);
+	transition-property: transform, background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.courseStart:hover{
+    background-color:#183B4E;
+	transform: scale(1.2);
+}
+
+form{
+    background-color: #F3F3E0;
+    padding: 2em;
+    border-radius: 10px;
+
+    width: 40vw;
+}
+
+input[type="text"], input[type="password"]{
+    width: 40vw;
+}
+
+span.bodyText{
+    display: none;
+}
+
+#profile{
+    background-color: #F3F3E0;
+    padding: 2em;
+    border-radius: 10px;
+
+    width: 60vw;
+}
